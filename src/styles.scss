@@ -1,3 +1,131 @@
-body{
-    background-color: $injectedColor;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$inter-font: 'Inter', sans-serif;
+
+body {
+    font-family: $inter-font;
+    margin: 0;
+}
+
+h4,
+p {
+    margin: 0;
+}
+
+$container-width: 1441px;
+
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    border-bottom: 1px solid #252525;
+    background: #0F131C;
+    padding: 11px 0;
+
+    .header_inner {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .navitems {
+            display: flex;
+            gap: 48px;
+            align-items: center;
+
+            .navitem {
+                color: #BABABA;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                text-transform: capitalize;
+                text-decoration: none;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: #C29032;
+                }
+            }
+        }
+
+        button {
+            color: #CF9455;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+            text-transform: capitalize;
+            border-radius: 100px;
+            border: 1px solid #C29032;
+            padding: 14.5px 32px;
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: #fff;
+                background-color: #C29032;
+                border-color: #CF9455;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #131313;
+    padding: 70px 0 54px;
+
+    .inner_footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        p,
+        a,
+        .info {
+            color: #CCC;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+        .info,
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .title,
+        .social {
+            color: #FFF;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 150%;
+            text-transform: capitalize;
+        }
+
+        .menus {
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+
+
+        }
+
+
+    }
+
+    hr {
+        background-color: #303030;
+        height: 1px;
+        border: none;
+        margin: 30px 0 50px;
+    }
+
+
 }
