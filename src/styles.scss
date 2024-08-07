@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+h4,
+p {
+    margin: 0;
+}
+
 $container-width: 1441px;
 
 
@@ -67,4 +72,60 @@ header {
             }
         }
     }
+}
+
+footer {
+    background-color: #131313;
+    padding: 70px 0 54px;
+
+    .inner_footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        p,
+        a,
+        .info {
+            color: #CCC;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+        .info,
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .title,
+        .social {
+            color: #FFF;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 150%;
+            text-transform: capitalize;
+        }
+
+        .menus {
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+
+
+        }
+
+
+    }
+
+    hr {
+        background-color: #303030;
+        height: 1px;
+        border: none;
+        margin: 30px 0 50px;
+    }
+
+
 }
