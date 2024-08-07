@@ -6,7 +6,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `$injectedColor: orange;`
+        additionalData: `$dark-yellow: #C29032;`
       },
     },
   },
